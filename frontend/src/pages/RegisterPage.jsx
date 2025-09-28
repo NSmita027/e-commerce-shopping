@@ -34,7 +34,7 @@ const RegisterPage = () => {
 
         <div className='relative z-10 max-w-md w-full bg-white/40 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-white/30'>
               <h2 className='text-3xl font-bold text-center text-gray-800 mb-6'>Create Account</h2>
-              <form onClick={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-4">
                   <input value={name} onChange={(e)=>setName(e.target.value)} placeholder='Name' className='w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-pink-400 focus:outline-none' />
                   <input value={email} onChange={(e)=>setEmail(e.target.value)} placeholder='Email' className='w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-pink-400 focus:outline-none' />
                   <input value={password} onChange={(e)=>setPassword(e.target.value)} placeholder='Password' className='w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-pink-400 focus:outline-none' />
